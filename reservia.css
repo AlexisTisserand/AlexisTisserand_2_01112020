@@ -696,8 +696,7 @@ footer a
 
 @media screen and (max-width: 1560px)
 {
-   
-    
+       
     a 
     {
         color: black;
@@ -829,6 +828,8 @@ footer a
 /*Version tablette - entre 630px et 1024px */ 
 @media screen and (max-width: 1024px)
 {
+
+
     #resultats-activites
     {
         display: none;
