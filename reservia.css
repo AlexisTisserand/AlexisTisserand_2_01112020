@@ -35,8 +35,7 @@ body
     background-color:white;
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: auto;
-    max-width: 2000px;
-    min-width: 100%;
+   
     
    
    
@@ -46,7 +45,8 @@ body
 {
     width: 90%;
     margin: auto;
-    
+    max-width: 2000px;
+    min-width: 100px;
     
        
 }
