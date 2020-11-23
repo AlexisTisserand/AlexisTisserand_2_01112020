@@ -455,7 +455,7 @@ nav li
     border-radius: 15px 15px 15px 15px;
     box-shadow: 3px 3px 3px 3px #b9b9b97a;
     padding: 5px 5px 5px 5px;
-    margin: 30px;
+    margin: 20px;
     transition: transform 200ms ease-in-out; 
     height: 8em;
     
@@ -685,10 +685,6 @@ footer a
     color: black;
 }
 
-.titre-footer
-{
-    margin: 2rem;
-}
 
                                 /*Nouvelles règles mobile*/
 
@@ -953,7 +949,7 @@ footer a
     }
 
     .text-input{
-        width: 80%;
+        width: 70%;
         font-size: 0.9em;
         overflow: hidden;
     }
@@ -966,6 +962,58 @@ footer a
 @media screen and (max-width: 660px)
 {
     
+    header
+    {
+        margin: 0;
+    }
+
+    header h2
+    {
+        margin-left: 1em;
+    }
+
+    #filtres h2
+    {
+        margin-left: 0 ;
+    }
+
+    #filtres
+    {
+        margin-left: 1.5em;
+    }
+
+    header h3
+    {
+        margin-left: 1.75em;
+    }
+
+    .remarque
+    {
+        margin-left: 2em;
+    }
+
+    .logo
+    {
+        margin-left: 1.5em;
+    }
+
+    .login
+    {
+        margin-right: 2em;
+    }
+
+    .nav-bar
+    {
+        
+        margin-top: 0.5em;
+        margin-bottom: -0.8em;
+    }
+
+    .nav-item:hover
+    {
+        border-top: none;
+    }
+
     footer
     {
         display: flex;
@@ -980,7 +1028,8 @@ footer a
     }
 
 
-    #nav-bar-mobile {
+    #nav-bar-mobile 
+    {
         display: flex;
         flex-direction: column;
     }
@@ -1002,9 +1051,16 @@ footer a
         text-align: center;
         padding: 10px;
 }
-    .ancre.inactive:hover
+    .ancre.inactive:hover,
+    .ancre.inactive
     {
         display: none;
+    }
+
+    .nav-item
+    {
+        padding: 0;
+        border-top: none;
     }
 
     .nav-item-mobile:hover .nav-link-mobile, 
@@ -1020,6 +1076,11 @@ footer a
         text-align: center;
         padding: 10px;
            
+    }
+
+    #search-bar
+    {
+        margin-left: 1.4em;
     }
 
     .card
