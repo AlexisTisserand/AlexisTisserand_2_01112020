@@ -825,7 +825,7 @@ footer a
 
 }
     
-/*Version tablette - entre 630px et 1024px */ 
+/*Version tablette - entre 660px et 1024px */ 
 @media screen and (max-width: 1024px)
 {
 
@@ -950,8 +950,7 @@ footer a
         display: flex;
         flex-direction: column;
     }
-
-        
+  
     ul 
     {
         padding: 0px;
@@ -960,14 +959,14 @@ footer a
         justify-content: space-around;  
     }
 
-
     .nav-item-mobile
     {   
         border-bottom: 4px solid lightgrey;
         width: 100%;
         text-align: center;
         padding: 10px;
-}
+    }
+
     .nav-item-mobile:hover
     {
     
@@ -979,9 +978,6 @@ footer a
         color: #0065fc;
     }
 
-   
 }
 
-   
-}
 
