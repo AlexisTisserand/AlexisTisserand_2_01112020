@@ -85,6 +85,10 @@ header h3
     width: 100%;
 }
 
+.nav-link.inactive{
+    color: black;
+}
+
 
 .ancre.inactive
 {
@@ -123,19 +127,6 @@ nav li
     text-decoration: none;
 
 }
-/*POUR MOBILE A GARDER
-.nav-item:hover:before, 
-.nav-item.active:before
-{
-    display: block;
-    content: "";
-    background-color:#0065FC ;
-    width: 150px;
-    height: 3px;
-    position: absolute;
-    margin-left: -20px ; 
-}
-*/
 
 .nav-item,
 .ancre.inactive
@@ -165,10 +156,9 @@ nav li
 .nav-item.active .nav-link,
 .ancre.inactive:hover .nav-link
 
-{
-    color: #0065FC;
-    font-weight: bold;
 
+{
+    color: #0065FC;  
 }
 
                                         /* Bouton rechercher*/
@@ -210,8 +200,8 @@ nav li
     padding: 14px;
     border: 2px solid #f2f2f2;
     width: 210px;
-    font-size: 0.9em;
     outline: none;
+    font-weight: bold;
    
 }
 
@@ -338,7 +328,8 @@ nav li
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 1.1em
+    font-size: 1.5em;
+    margin-left: 1.2em;
     
 }
 
@@ -359,7 +350,7 @@ nav li
     flex-direction: column;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     padding: 5px 5px 5px 5px;
     margin: 15px;
     width: 30%;
@@ -375,7 +366,7 @@ nav li
 
 .card img
 {
-    height: 7rem;
+    height: 130px;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
@@ -412,13 +403,10 @@ nav li
 
 }
 
-.afficher-plus
+.afficher-plus h4
 {
     font-size: 1em;
-    font-weight: bold;
-    color: black ;
-    text-decoration: none;
-    width: 100%;  
+    margin-left: 1.5em;
 }
 
 
@@ -465,7 +453,7 @@ nav li
     flex-direction: row;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     padding: 5px 5px 5px 5px;
     margin: 30px;
     transition: transform 200ms ease-in-out; 
@@ -527,6 +515,7 @@ nav li
 {
     display: flex;
     width: 100%;
+    font-size: 1.5em;
    
 }
 
@@ -543,7 +532,7 @@ nav li
     flex-direction: column;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     width: 20%;
     height: 440px;
     transition: transform 200ms ease-in-out;   
@@ -581,7 +570,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     width: 100%;
     height: 53%;
     transition: transform 200ms ease-in-out;
@@ -604,7 +593,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     width: 100%;
     height: 37%;
     transition: transform 200ms ease-in-out;
@@ -627,7 +616,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     width: 100%;
     height: 44%;
     transition: transform 200ms ease-in-out;
@@ -650,7 +639,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 6px 6px 6px 6px #686868c4;
+    box-shadow: 3px 3px 3px 3px #b9b9b97a;
     width: 100%;
     height: 47%;
     transition: transform 200ms ease-in-out;
@@ -750,6 +739,12 @@ footer a
 
 @media screen and (max-width: 1220px)
 {
+
+    header
+    {
+        margin: 1em;
+    }
+
     .nav-item.inactive
     {
         display: none;
@@ -758,6 +753,12 @@ footer a
     .ancre.inactive
     {
         display: flex;
+        
+    }
+
+    .ancre.inactive .nav-link
+    {
+        color: black;
     }
 
     #bloc-page
@@ -765,17 +766,17 @@ footer a
         width: 100%;
     }
 
-    header
-    {
-        margin: 1em;
-    }
-    
+        
     #resultat-recherche
     {
         flex-wrap: wrap-reverse;
     }
 
-    
+    .card
+    {
+        width: 30%;
+    }
+
     #hebergements-populaires
     {
         flex-direction: column;
@@ -804,6 +805,8 @@ footer a
         display: flex;
         width: 100%;
         margin: 1em;
+        font-size: 1.5em;
+        margin-left: 2em;
     }
 
     #resultat-recherche
@@ -850,7 +853,16 @@ footer a
 /*Version tablette - entre 630px et 1024px */ 
 @media screen and (max-width: 1024px)
 {
+    .card
+    {
+        width: 45%;
 
+    }
+
+    .card img{
+        height: 150px;
+    }
+  
 
     #resultats-activites
     {
@@ -862,6 +874,7 @@ footer a
         display: flex;
         width: 100%;
         margin: 1em;
+        margin-left: 1.5em;
     }
 
     #resultat-recherche
@@ -885,8 +898,7 @@ footer a
         width: 100%;
     }
 
-    
-    
+        
     #filtres h2
     {
         width: 100%;
@@ -906,6 +918,7 @@ footer a
     .resultat-hebergements.inactive
     {
         display: flex;
+        margin-bottom: 1em;
     }
 
     .nav-bar
@@ -922,29 +935,11 @@ footer a
         background-color: white;
     }
 
-    
-}
-
-
-/*Version mobile  - entre 300px et 660px*/ 
-@media screen and (max-width: 660px)
-{
-    footer
-    {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
     .search
     {
         display: none;
     }
 
-    .card
-    {
-        width: 90%;
-    }
 
     .fa-search {
         display: inline;
@@ -956,11 +951,28 @@ footer a
         width: 25px;
         margin-left: -15px;
     }
+
     .text-input{
-        width: 100%;
+        width: 80%;
         font-size: 0.9em;
         overflow: hidden;
     }
+
+    
+}
+
+
+/*Version mobile  - entre 300px et 660px*/ 
+@media screen and (max-width: 660px)
+{
+    
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
 
     .nav-link, .nav-item.active, .nav-item.inactive
     {
@@ -985,22 +997,35 @@ footer a
 
     .nav-item-mobile
     {   
-        border-bottom: 4px solid lightgrey;
+        border-bottom: 4px solid #f2f2f2;
         width: 100%;
         text-align: center;
         padding: 10px;
 }
-    .nav-item-mobile:hover
+    .ancre.inactive:hover
     {
-    
-        border-bottom: 4px solid #0065fc;
+        display: none;
     }
 
-    .nav-item-mobile a:hover
+    .nav-item-mobile:hover .nav-link-mobile, 
+    .nav-item-mobile:focus, .nav-item-mobile:active,
+    .nav-item-mobile.active .nav-link-mobile,
+    .nav-item-mobile:hover,
+    .nav-item-mobile.active 
+    
     {
         color: #0065fc;
+        border-bottom: 4px solid #0065FC;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+           
     }
 
+    .card
+    {
+        width: 90%;
+    }
    
 }
 
