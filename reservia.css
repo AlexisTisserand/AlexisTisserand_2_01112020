@@ -76,15 +76,18 @@ header h3{
     display: flex;
     justify-content: space-between;
     background-color: white;
-    margin-top: -1em;
-    top: 0; 
+    margin: 0;
+    min-height: 110px;
     width: 100%;
+}
+
+.nav-bar nav{
+    display: flex;
 }
 
 .nav-link.inactive{
     color: black;
 }
-
 
 .ancre.inactive{
     display: none;
@@ -102,6 +105,7 @@ header h3{
     list-style-type: none;
     display: flex;
     padding: 0;
+    margin: 0;
 }
 
 .nav-bar a{
@@ -109,7 +113,14 @@ header h3{
     font-weight: normal;
     color:#0065FC ;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
+.nav-bar .nav-item{
+    align-self: stretch;
+    display: flex;
 }
 
 .nav-item,
@@ -140,7 +151,6 @@ header h3{
 
 /* Bouton rechercher*/
 
-
 #search-bar {
     display: flex;
 }
@@ -157,7 +167,7 @@ header h3{
 }
 
 .button-first {
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 20px 0px 0px 20px;
     background-color: #f2f2f2;
     font-size: 19px;
     width: 20px;
@@ -165,7 +175,7 @@ header h3{
 }
 
 .button-second {
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 20px 20px 0px;
     background-color: #0065fc;
     color: white;
     cursor: pointer;
@@ -703,7 +713,7 @@ footer a{
     }
 
     .nav-bar{
-        margin-top: -2em;
+        margin-top: -1em;
     }
 }
     
@@ -767,7 +777,7 @@ footer a{
     }
 
     .nav-bar{
-        margin-top: -2em;
+        margin-top: -1em;
     }
 
     #hebergements{
@@ -787,7 +797,7 @@ footer a{
     }
 
     .button-second {
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 17px;
         width: 25px;
         margin-left: -15px;
     }
