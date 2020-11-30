@@ -3,12 +3,12 @@
 @font-face 
 {
     font-family: 'Raleway';
-    src: url('Raleway-Regular.eot');
-    src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Raleway-Regular.woff2') format('woff2'),
-        url('Raleway-Regular.woff') format('woff'),
-        url('Raleway-Regular.ttf') format('truetype'),
-        url('Raleway-Regular.svg#Raleway-Regular') format('svg');
+    src: url('fonts/raleway/Raleway-Regular.ttf');
+    src: url('fonts/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/raleway/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Regular.woff') format('woff'),
+        url('fonts/raleway/Raleway-Regular.ttf') format('truetype'),
+        url('fonts/raleway/Raleway-Regular.svg#Raleway-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,16 +16,30 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-Bold.eot');
-    src: url('Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Raleway-Bold.woff2') format('woff2'),
-        url('Raleway-Bold.woff') format('woff'),
-        url('Raleway-Bold.ttf') format('truetype'),
-        url('Raleway-Bold.svg#Raleway-Bold') format('svg');
+    src: url('fonts/raleway/Raleway-Bold.eot');
+    src: url('fonts/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Bold.woff') format('woff'),
+        url('fonts/raleway/Raleway-Bold.ttf') format('truetype'),
+        url('fonts/raleway/Raleway-Bold.svg#Raleway-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/raleway/Raleway-Bold.eot');
+    src: url('fonts/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/raleway/Raleway-Bold.woff') format('woff'),
+        url('fonts/raleway/Raleway-Bold.ttf') format('truetype'),
+        url('fonts/raleway/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
                                 /* Eléments principaux de la page */
@@ -35,10 +49,6 @@ body
     background-color:white;
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: auto;
-   
-    
-   
-   
 }
 
 #bloc-page
@@ -47,9 +57,6 @@ body
     margin: auto;
     max-width: 2000px;
     min-width: 100px;
-    
-    
-       
 }
 
 a
@@ -96,7 +103,7 @@ header h3
     display: none;
 }
 
-                                    /*NAV BAR POUR MOBILE*/                 
+/*NAV BAR POUR MOBILE*/                 
 
 #nav-bar-mobile
 {
@@ -111,14 +118,6 @@ header h3
     display: flex;
     padding: 0;
 }
-
-/*
-nav li
-{
-    margin: 0 25px;
-    padding-top: 10px;
-}
-*/
 
 .nav-bar a
 {
@@ -156,8 +155,6 @@ nav li
 .nav-item:active,
 .nav-item.active .nav-link,
 .ancre.inactive:hover .nav-link
-
-
 {
     color: #0065FC;  
 }
@@ -168,6 +165,7 @@ nav li
 #search-bar {
     display: flex;
 }
+
 .search {
     display: inline;
 }
@@ -178,6 +176,7 @@ nav li
     font-size: 19px;
     text-align: center;
 }
+
 .button-first {
     border-radius: 10px 0px 0px 10px;
     background-color: #f2f2f2;
@@ -185,6 +184,7 @@ nav li
     width: 20px;
     border: 1px solid #f2f2f2;
 }
+
 .button-second {
     border-radius: 0px 10px 10px 0px;
     background-color: #0065fc;
@@ -203,7 +203,6 @@ nav li
     width: 210px;
     outline: none;
     font-weight: bold;
-   
 }
 
 .fa-search {
@@ -211,7 +210,6 @@ nav li
     opacity: 0;
     position: absolute;
 }
-
 
                                                 /* Filtres */
 
@@ -239,7 +237,6 @@ nav li
     margin-right: 25px;
     width:15px;
     height:15px; 
-
 }
 
 .filtres-bouton
@@ -260,24 +257,22 @@ nav li
     
 }
 
-
 .filtres-bouton:hover
 {
     background-color: #DEEBFF;   
     transform: scale(1.04);
 }
 
-.remarque
+#remarque
 {
     display: flex;
     font-size: 0.8em;
     align-items: center;
     padding-top: 10px;
-    padding-bottom: 20px;
-     
+    padding-bottom: 20px;   
 }
 
-.remarque .fas
+#remarque .fas
 {
     color: #0065FC;
     font-size: 1em;
@@ -291,12 +286,12 @@ nav li
     border-radius: 50px;
     width:15px;
     height:15px;
-    
 }
 
-.remarque p
+#remarque p
 {
     margin-left: 10px;
+    font-size: 1.2em;
 }
 
 
@@ -320,8 +315,6 @@ nav li
     border-radius: 15px 15px 15px 15px;
     width: 65%;
     height: auto;
-    
-    
 }
 
 #resultat-recherche h3, #hebergements-populaires h3
@@ -331,7 +324,6 @@ nav li
     width: 100%;
     font-size: 1.5em;
     margin-left: 1.2em;
-    
 }
 
 .resultat-hebergements 
@@ -342,7 +334,6 @@ nav li
     flex-wrap: wrap;
     height: auto;
     width: 100%;
-    
 }
 
 .card
@@ -351,13 +342,12 @@ nav li
     flex-direction: column;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow: 1px 1px 8px 1px #b9b9b95b;
     padding: 5px 5px 5px 5px;
     margin: 15px;
     width: 30%;
     box-sizing: border-box;
     transition: transform 200ms ease-in-out;  
-
 }
 
 .card:hover
@@ -454,7 +444,7 @@ nav li
     flex-direction: row;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow: 1px 1px 8px 1px #b9b9b95b;
     padding: 5px 5px 5px 5px;
     margin: 20px;
     transition: transform 200ms ease-in-out; 
@@ -533,7 +523,7 @@ nav li
     flex-direction: column;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow: 1px 1px 8px 1px #b9b9b95b;
     width: 20%;
     height: 440px;
     transition: transform 200ms ease-in-out;   
@@ -571,7 +561,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow: 1px 1px 8px 1px #b9b9b95b;
     width: 100%;
     height: 53%;
     transition: transform 200ms ease-in-out;
@@ -594,7 +584,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow: 1px 1px 8px 1px #b9b9b95b;
     width: 100%;
     height: 37%;
     transition: transform 200ms ease-in-out;
@@ -617,7 +607,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow: 1px 1px 8px 1px #b9b9b95b;
     width: 100%;
     height: 44%;
     transition: transform 200ms ease-in-out;
@@ -640,7 +630,7 @@ nav li
 {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 3px 3px 3px 3px #b9b9b97a;
+    box-shadow:  1px 1px 8px 1px #b9b9b95b;
     width: 100%;
     height: 47%;
     transition: transform 200ms ease-in-out;
@@ -988,10 +978,6 @@ footer a
         margin-left: 1.75em;
     }
 
-    .remarque
-    {
-        margin-left: 2em;
-    }
 
     .logo
     {
