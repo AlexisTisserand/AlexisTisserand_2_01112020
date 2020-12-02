@@ -826,4 +826,8 @@ footer a{
         margin: 20px;
         margin-bottom: 40px;
     }
+
+    #remarque{
+        margin-left: 20px;
+    }
 }
