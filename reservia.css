@@ -698,7 +698,7 @@ footer a{
         position: relative;
     }
 
-    .button-second {
+    .button-second{
         border-radius: 17px;
         width: 25px;
         margin-left: -15px;
@@ -714,15 +714,14 @@ footer a{
         row-gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 12rem 12rem 12rem;
-
+    }
 }
 
 /*Version mobile  - entre 300px et 660px*/ 
 @media screen and (max-width: 660px)
 {
-
     #resultat-recherche h3,
-    #hebergements-poulaires h3,
+    #hebergements-populaires h3
     {
         margin-left:0.8em;
     }
@@ -792,7 +791,7 @@ footer a{
         width: 100%;
         text-align: center;
         padding: 10px;
-}
+    }
 
     .nav-item{
         padding: 0;
